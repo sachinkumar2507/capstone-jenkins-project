@@ -4,7 +4,7 @@ pipeline {
         }
         tools {
             maven 'maven'
-           
+            jdk 'jdk8'
         }
     stages {
                stage("clean-up"){
