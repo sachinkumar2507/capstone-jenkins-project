@@ -2,6 +2,10 @@ pipeline {
     agent {
         label 'slave2'
     }
+	tools { 
+        maven 'maven' 
+        jdk 'jdk 8'
+    }
     stages {
         stage("clean-up"){
             steps{
